@@ -8,5 +8,5 @@ use `make init` to initial the node, and `make start` to boot up the node, it wi
 
 you can change the rpc port in `env.sh` and other param in `start.sh`.
 
-# independent
+# dependent
 os: ubuntu x86_64
