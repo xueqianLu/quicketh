@@ -5,3 +5,9 @@ init:
 start:
 	@./start.sh
 
+stop:
+	@./stop.sh
+
+
+clean:
+	@rm -rf ./node/data/geth

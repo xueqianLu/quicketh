@@ -1,8 +1,9 @@
 #!/bin/bash
 source env.sh
-./bin/geth --datadir node/data --http \
+./bin/quickgeth --datadir node/data --http \
 	--nodiscover \
 	--miner.threads=1 \
+	--miner.gaslimit=10000000000 \
         --http.api=eth,net,web3,admin,txpool,miner,debug \
         --http.addr=0.0.0.0 \
 	--http.port=$rpcport \
@@ -15,6 +16,7 @@ source env.sh
         --authrpc.vhosts=* \
         --authrpc.addr=0.0.0.0 \
         --authrpc.port=8551 \
+	--rpc.allow-unprotected-txs \
         --authrpc.jwtsecret=node/data/jwtsecret \
         --allow-insecure-unlock \
         --unlock=0xfEe2882b7d75FadDcebD002E7e3bEf7B19Eed14E \
