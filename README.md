@@ -8,5 +8,9 @@ use `make init` to initial the node, and `make start` to boot up the node, it wi
 
 you can change the rpc port in `env.sh` and other param in `start.sh`.
 
+use `make stop` to stop the node, and `make clean` to clean the node data. Then you can `make init` and `make start` to 
+
+boot up the node from 0 height.
+
 # dependent
 os: ubuntu x86_64
